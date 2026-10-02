@@ -1,0 +1,13 @@
+from sqlalchemy.orm import DeclarativeBase
+
+
+class Base(DeclarativeBase):
+    pass
+
+
+from app.models.user import User
+from app.models.diagnostic_centre import DiagnosticCentre
+from app.models.diagnostic_test import DiagnosticTest
+from app.models.centre_test import CentreTest
+from app.models.booking import Booking
+from app.models.payment import Payment
